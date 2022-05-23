@@ -1,0 +1,46 @@
+@import '../variables/variables';
+
+@import url('../reset.css');
+@import url('/src/css/navbar/navbar.css');
+@import url('/src/css/main-section/main-section.css');
+@import url('/src/css/description/description.css');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #000 ;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  height: 100%;
+}
+
+.header {
+  height: 10vh;
+  margin: 2.5rem 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: $background-color;
+  height: 80vh;
+}
+
+.description {
+  // height: 70vh;
+}
+
+.footer {
+  height: 30vh;
+  background-color: #000;
+}
+
+.noisy {
+  background-image: url('../../img/font_texture_noise.png');  
+} 

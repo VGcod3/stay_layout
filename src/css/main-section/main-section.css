@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.main .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F8FBFA;
+  margin-bottom: 20px;
+}
+
+.main h4 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3vw;
+  line-height: 30px;
+  text-align: center;
+  color: #F8FBFA;
+}
+
+.main .button-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 80px 0;
+}
+
+hr {
+  background-color: #00E091;
+  opacity: 1;
+  height: 2px;
+}
+
+.custom-button {
+  width: 260px;
+  height: 60px;
+  border-radius: 0;
+  margin: 0 20px;
+  margin-top: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 124.02%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.custom-button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.greeen-fill {
+  background-color: #00E091;
+  background: -webkit-gradient(linear, left top, right top, from(#00E091), to(#01A169));
+  background: linear-gradient(90deg, #00E091 0%, #01A169 100%);
+}
+
+.greeen-fill:hover {
+  background-color: #F8FBFA;
+  background: #F8FBFA;
+  color: #00E091;
+}
+
+.black-fill {
+  background-color: #1B1B1B;
+}
+
+.black-fill:hover {
+  color: #00E091;
+}
+
+.green-outline {
+  border: 2px solid #00E091;
+}
+/*# sourceMappingURL=main-section.css.map */

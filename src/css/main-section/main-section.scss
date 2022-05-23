@@ -1,0 +1,102 @@
+@import '../variables/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.main {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 130%;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #F8FBFA;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 30px;
+    text-align: center;
+
+    color: #F8FBFA;
+    // margin-bottom: 80px;
+  }
+
+  .button-block{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 80px 0 ;
+  
+  }
+
+}
+
+hr {
+  background-color: $base-green;
+  opacity: 1;
+  height: 2px;
+}
+
+.custom-button {
+    width: 260px;
+    height: 60px;
+    border-radius: 0;
+    margin: 0 20px;
+    margin-top: 1em;
+    box-sizing: border-box;
+
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 124.02%;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    &:active{
+      transform: scale(0.9);
+    }
+  }
+  
+  .greeen-fill {
+    background-color: $base-green;
+    background: $gradient-ready;
+    
+    &:hover{
+      background-color: #F8FBFA;
+      background: #F8FBFA;
+      color: $base-green;
+    }
+  }
+
+  .black-fill {
+    background-color: $background-color;
+    &:hover{
+      color: $base-green;
+    } 
+  }
+
+.green-outline {
+    border: 2px solid $base-green;
+}

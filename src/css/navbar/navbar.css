@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+header .navbar-brand {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #00E091;
+}
+
+header .navbar-brand:hover, header .navbar-brand:focus {
+  color: #00E091;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+header .navbar-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header #auth {
+  margin-left: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+}
+
+header #auth:hover {
+  border-bottom: 1px #00E091 solid;
+}
+
+header #auth .login-link {
+  color: #00E091;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+header .nav-links-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .nav-links-wrapper .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-self: center;
+  width: 100%;
+}
+
+header .nav-links-wrapper .nav-links .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+header .nav-links-wrapper .nav-links .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-links-wrapper .nav-links .nav-item:hover {
+  border-bottom: 1px white solid;
+}
+
+.navbar-toggler {
+  border: 1px #00E091 solid;
+  outline: #00E091;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px #00E091 solid;
+}
+
+.navbar-toggler-icon {
+  background-image: url("../../img/hamburger.svg") !important;
+}
+
+.navbar-collapse {
+  background-color: #1B1B1B;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-item, .login-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+    padding: 20px !important;
+    margin-left: 0;
+  }
+}
+
+header #auth {
+  margin-left: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header #auth .login-link:hover {
+  border-bottom: 1px solid #00E091;
+}
+
+header #auth:hover {
+  border-bottom: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=navbar.css.map */

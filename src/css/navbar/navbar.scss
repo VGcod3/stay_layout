@@ -1,0 +1,141 @@
+@import '../variables/variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+header {
+    .navbar-brand {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: $base-green;
+
+    &:hover, &:focus {
+    color: $base-green;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    // align-items: stretch;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #auth {
+    margin-left: 80px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    
+    &:hover{
+        border-bottom: 1px $base-green solid;  
+    }
+    
+    .login-link {
+      color: $base-green;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+    }
+  }
+
+  .nav-links-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    width: 100%;
+
+    .nav-link {
+      display: flex;
+      justify-content: center;
+
+      padding: 0;
+
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+       &:hover{
+        border-bottom: 1px white solid;  
+      }
+    }
+  }
+  }
+}
+
+.navbar-toggler {
+  border: 1px $base-green solid;
+  outline: $base-green;
+  box-sizing: border-box;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  box-sizing: border-box;
+  border: 1px $base-green solid;
+}
+.navbar-toggler-icon  {
+  background-image: url('../../img/hamburger.svg') !important;
+}
+
+ .navbar-collapse {
+    background-color: $background-color;
+    // border: 3px $base-green solid;
+    margin: 20px 0;
+ }
+
+@media screen and (max-width: 992px) {
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-item, .login-link {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 20px !important;
+    margin-left: 0;
+  }
+  
+}
+
+
+  header #auth{
+    margin-left: 0;
+    padding: 0;
+    justify-content: center;
+
+    .login-link:hover {
+      border-bottom: 1px solid $base-green;
+    }
+
+    &:hover{
+      border-bottom: 0;  
+      padding: 0;
+  }
+}

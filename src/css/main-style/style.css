@@ -1,0 +1,47 @@
+@import url("../reset.css");
+@import url("/src/css/navbar/navbar.css");
+@import url("/src/css/main-section/main-section.css");
+@import url("/src/css/description/description.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #000;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1B1B1B;
+  height: 100%;
+}
+
+.header {
+  height: 10vh;
+  margin: 2.5rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  background-color: #1B1B1B;
+  height: 80vh;
+}
+
+.footer {
+  height: 30vh;
+  background-color: #000;
+}
+
+.noisy {
+  background-image: url("../../img/font_texture_noise.png");
+}
+/*# sourceMappingURL=style.css.map */
