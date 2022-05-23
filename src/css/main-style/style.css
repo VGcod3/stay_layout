@@ -1,7 +1,7 @@
 @import url("../reset.css");
-@import url("/src/css/navbar/navbar.css");
-@import url("/src/css/main-section/main-section.css");
-@import url("/src/css/description/description.css");
+@import url("../navbar/navbar.css");
+@import url("../main-section/main-section.css");
+@import url("../description/description.css");
 * {
   margin: 0;
   padding: 0;
