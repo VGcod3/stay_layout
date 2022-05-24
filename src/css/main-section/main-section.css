@@ -24,9 +24,6 @@
   text-transform: uppercase;
   color: #F8FBFA;
   margin-bottom: 20px;
-  -webkit-hyphens: manual;
-      -ms-hyphens: manual;
-          hyphens: manual;
 }
 
 .main h4 {
@@ -55,10 +52,13 @@
   .main h1 {
     font-size: 30px;
     text-align: start;
+    margin-left: 20px;
   }
   .main h4 {
     font-size: 20px;
     text-align: start;
+    width: 80%;
+    margin-left: 20px;
   }
 }
 
