@@ -34,6 +34,7 @@ body {
 .main {
   background-color: #1B1B1B;
   height: 80vh;
+  min-height: 580px;
 }
 
 .footer {

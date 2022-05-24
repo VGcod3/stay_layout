@@ -6,7 +6,7 @@
   // display: flex;
   // flex-direction: column;
   // align-items: center;
-  
+
   .container {
     height: 100%;
     display: flex;
@@ -26,6 +26,7 @@
 
     color: #F8FBFA;
     margin-bottom: 20px;
+    hyphens: manual;
   }
 
   h4 {
@@ -40,14 +41,23 @@
     // margin-bottom: 80px;
   }
 
-  .button-block{
+  .button-block {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 80px 0 ;
-  
+    margin: 80px 0;
   }
 
+  @media screen and (max-width: 576px) {
+    h1 {
+    font-size: 30px;
+    text-align: start;
+    }
+    h4 {
+      font-size: 20px;
+      text-align: start;
+    }
+}
 }
 
 hr {
@@ -57,46 +67,50 @@ hr {
 }
 
 .custom-button {
-    width: 260px;
-    height: 60px;
-    border-radius: 0;
-    margin: 0 20px;
-    margin-top: 1em;
-    box-sizing: border-box;
+  width: 260px;
+  height: 60px;
+  border-radius: 0;
+  margin: 0 20px;
+  margin-top: 1em;
+  box-sizing: border-box;
 
-    color: white;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 124.02%;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 124.02%;
 
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
 
-    &:active{
-      transform: scale(0.9);
-    }
+  &:active {
+    transform: scale(0.9);
   }
-  
-  .greeen-fill {
-    background-color: $base-green;
-    background: $gradient-ready;
-    
-    &:hover{
-      background-color: #F8FBFA;
-      background: #F8FBFA;
-      color: $base-green;
-    }
+}
+
+
+
+.greeen-fill {
+  background-color: $base-green;
+  background: $gradient-ready;
+
+  &:hover {
+    background: #F8FBFA;
+    color: $base-green;
   }
 
-  .black-fill {
-    background-color: $background-color;
-    &:hover{
-      color: $base-green;
-    } 
+}
+
+.black-fill {
+  background-color: $background-color;
+
+  &:hover {
+    color: $base-green;
   }
+}
 
 .green-outline {
-    border: 2px solid $base-green;
+  border: 2px solid $base-green;
 }

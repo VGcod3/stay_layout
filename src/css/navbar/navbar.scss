@@ -90,14 +90,14 @@ header {
 
 .navbar-toggler {
   border: 1px $base-green solid;
-  outline: $base-green;
+  // outline: $base-green;
   box-sizing: border-box;
 }
 
-.navbar-toggler:focus {
+.navbar-toggler:focus, .navbar-toggler:hover {
   box-shadow: none;
   box-sizing: border-box;
-  border: 1px $base-green solid;
+  border: 2px $base-green solid;
 }
 .navbar-toggler-icon  {
   background-image: url('../../img/hamburger.svg') !important;
@@ -105,7 +105,7 @@ header {
 
  .navbar-collapse {
     background-color: $background-color;
-    // border: 3px $base-green solid;
+    // border: 2px $base-green solid;
     margin: 20px 0;
  }
 
@@ -123,7 +123,6 @@ header {
   }
   
 }
-
 
   header #auth{
     margin-left: 0;

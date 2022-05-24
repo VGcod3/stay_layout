@@ -117,17 +117,16 @@ header .nav-links-wrapper .nav-links .nav-item:hover {
 
 .navbar-toggler {
   border: 1px #00E091 solid;
-  outline: #00E091;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.navbar-toggler:focus {
+.navbar-toggler:focus, .navbar-toggler:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px #00E091 solid;
+  border: 2px #00E091 solid;
 }
 
 .navbar-toggler-icon {
